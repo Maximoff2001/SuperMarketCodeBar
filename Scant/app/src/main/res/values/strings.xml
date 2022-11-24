@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Scant</string>
+    <string name="Producto">Informacion del producto</string>
+
+    <string name="idProducto">ID Producto</string>
+    <string name="NombreProducto">Nombre de producto</string>
+    <string name="TipoContenido">Tipo de Contenido</string>
+    <string name="Cantidad">Cantidad</string>
+    <string name="Precio">Precio</string>
+
+    <string name="BTNRegistrarProducto">Registrar Producto</string>
+</resources>

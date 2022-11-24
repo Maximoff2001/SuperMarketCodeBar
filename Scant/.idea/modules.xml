@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Scant.iml" filepath="$PROJECT_DIR$/.idea/modules/Scant.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Scant.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Scant.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Scant.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Scant.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Scant.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Scant.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Scant.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Scant.app.unitTest.iml" />
+    </modules>
+  </component>
+</project>
