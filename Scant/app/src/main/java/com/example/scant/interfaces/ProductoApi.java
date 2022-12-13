@@ -7,7 +7,7 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 
 public interface ProductoApi {
-    @GET("api/producto/{id}")
+    @GET("products/{id}")
     public Call<Producto> find(@Path("id")String id);
 
 }

@@ -25,6 +25,7 @@ public class infoProducto extends AppCompatActivity {
     TextView tvNombre, tvDescripcion, tvPrecio;
     ImageView imProducto;
     Button btnBuscar;
+    String Ip="http://192.168.57.158:3000/";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,7 +45,7 @@ public class infoProducto extends AppCompatActivity {
         });
     }
     private void find(String codigo){
-        Retrofit retrofit=new Retrofit.Builder().baseUrl("")
+        Retrofit retrofit=new Retrofit.Builder().baseUrl(Ip)
                 .addConverterFactory(GsonConverterFactory.create()).build();
 
         ProductoApi productoApi=retrofit.create(ProductoApi.class);
@@ -55,11 +56,13 @@ public class infoProducto extends AppCompatActivity {
                 try {
                     if (response.isSuccessful()){
                         Producto p=response.body();
-                                String URL_IMG=""+p.getPro_codigo()+".jpg";
+                        Toast.makeText(infoProducto.this, p.getNombre().toString(), Toast.LENGTH_SHORT).show();
+                        System.out.println(p.getNombre().toString());
+                               /* String URL_IMG=""+p.getPro_codigo()+".jpg";
                                 tvNombre.setText(p.getPro_nombre());
                                 tvDescripcion.setText(p.getPro_descripcion());
                                 tvPrecio.setText(p.getPro_precio().toString());
-                        Glide.with(getApplication()).load(URL_IMG).into(imProducto);
+                        Glide.with(getApplication()).load(URL_IMG).into(imProducto);*/
                     }
                 }catch (Exception ex){
                     Toast.makeText(infoProducto.this, ex.getMessage(), Toast.LENGTH_SHORT).show();

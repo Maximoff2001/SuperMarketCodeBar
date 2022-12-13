@@ -1,40 +1,49 @@
 package com.example.scant.models;
 
 public class Producto {
-    private String pro_codigo;
-    private String pro_nombre;
-    private String pro_descripcion;
-    private Double pro_precio;
+    private Integer id;
+    private String nombre;
+    private String codigo;
+    private Integer cantidad;
+    private Double precio;
 
-    public String getPro_codigo() {
-        return pro_codigo;
+    public Integer getId() {
+        return id;
     }
 
-    public void setPro_codigo(String pro_codigo) {
-        this.pro_codigo = pro_codigo;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getPro_nombre() {
-        return pro_nombre;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setPro_nombre(String pro_nombre) {
-        this.pro_nombre = pro_nombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getPro_descripcion() {
-        return pro_descripcion;
+    public String getCodigo() {
+        return codigo;
     }
 
-    public void setPro_descripcion(String pro_descripcion) {
-        this.pro_descripcion = pro_descripcion;
+    public void setCodigo(String codigo) {
+        this.codigo = codigo;
     }
 
-    public Double getPro_precio() {
-        return pro_precio;
+    public Integer getCantidad() {
+        return cantidad;
     }
 
-    public void setPro_precio(Double pro_precio) {
-        this.pro_precio = pro_precio;
+    public void setCantidad(Integer cantidad) {
+        this.cantidad = cantidad;
+    }
+
+    public Double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(Double precio) {
+        this.precio = precio;
     }
 }
